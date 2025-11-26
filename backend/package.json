@@ -5,22 +5,29 @@
   "main": "src/app.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon"
+    "dev": "nodemon",
+    "prettier": "prettier --check .",
+    "prettier:fix": "prettier --write ."
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cookie-parse": "^0.4.0",
     "cors": "2.8.5",
     "dotenv": "17.2.3",
     "express": "5.1.0",
-    "mongoose": "8.19.4",
-    "prettier": "^3.6.2"
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "8.19.4"
   },
   "devDependencies": {
+    "@types/cookie-parser": "^1.4.10",
     "@types/express": "5.0.5",
+    "@types/jsonwebtoken": "^9.0.10",
     "@types/node": "24.10.1",
     "nodemon": "3.1.11",
+    "prettier": "3.6.2",
     "ts-node": "10.9.2",
     "tsconfig-paths": "4.2.0",
     "typescript": "5.9.3"
