@@ -16,3 +16,12 @@ export interface IRegisterBody {
   firstName: string
   lastName: string
 }
+
+export interface ILoginBody {
+  username: string
+  password: string
+}
+
+export interface ITokenPayload {
+  userId: string
+}

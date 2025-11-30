@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "module": "commonjs",
+    "moduleResolution": "node",
     "esModuleInterop": true,
     "target": "es6",
     "sourceMap": true,
@@ -8,6 +9,7 @@
     "outDir": "dist",
     "rootDir": "src",
     "baseUrl": ".",
+    "types": ["node"],
     "paths": {
       "controllers/*": ["controllers/*"],
       "libs/*": ["libs/*"],
@@ -17,5 +19,6 @@
       "interfaces/*": ["interfaces/*"]
     }
   },
+  "include": ["src/**/*"],
   "files": ["src/type.d.ts"]
 }
